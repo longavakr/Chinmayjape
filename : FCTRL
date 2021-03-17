@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+#include<boost/multiprecision/cpp_int.hpp>
+using namespace boost::multiprecision;
+int main() {
+double t,n;
+     cin>>t;
+   while(t--)
+   {   cin>>n;
+  cpp_int fact=1;
+     for(int i=1;i<=n;i++)
+    {
+        fact=fact*i;
+    }
+    cout<<fact<<"\n";
+   }
+	return 0;
+}
